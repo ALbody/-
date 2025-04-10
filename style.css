@@ -1,0 +1,136 @@
+/* تنسيق الأساسيات */
+body {
+  font-family: 'Arial', sans-serif;
+  direction: rtl;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* تنسيق الحاوية الرئيسية */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* تنسيق الهيدر */
+header {
+  background-color: #0066cc; /* اللون الأزرق */
+  color: white; /* النص باللون الأبيض */
+  padding: 30px 0;
+  margin-bottom: 40px;
+  border-radius: 10px; /* حواف دائرية */
+}
+
+header h1 {
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* تنسيق العناوين */
+h2 {
+  color: #0077b5;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* تنسيق الفقرات والقوائم */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background: url('https://img.icons8.com/ios/452/checked.png') no-repeat left center;
+  background-size: 20px;
+  padding-left: 30px;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* تنسيق أزرار التنقل */
+footer .btn {
+  font-size: 18px;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-align: center;
+  display: block;
+  width: 180px;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+}
+
+/* زر "السابق" */
+footer .btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  text-decoration: none;
+}
+
+footer .btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* زر "التالي" */
+footer .btn-primary {
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+}
+
+footer .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* تنسيق الفوتر */
+footer {
+  background-color: #f1f1f1;
+  padding: 20px 0;
+}
+
+/* إضافة تأثير لظهور الصفحة */
+.container {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* إضافة تأثير لأزرار التمرير */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* إضافة تأثير التمرير السلس عند التمرير إلى الروابط */
+html, body {
+  scroll-behavior: smooth;
+}
+
+/* تنسيق الحواف والهوامش */
+section {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق النصوص داخل الفقرات */
+p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}

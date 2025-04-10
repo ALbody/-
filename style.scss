@@ -1,0 +1,63 @@
+// تعريف المتغيرات
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$background-color: #f8f9fa;
+$text-color: #333;
+
+// التنسيق العام للجسم والخطوط
+body {
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+  background-color: $background-color;
+  color: $text-color;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+// تنسيق العناوين
+h1, h2 {
+  color: $primary-color;
+  margin-bottom: 20px;
+}
+
+// تنسيق الفقرات والقوائم
+p, li {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+ul {
+  padding-right: 20px;
+}
+
+// تأثير الأزرار عند التمرير
+.btn {
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+// تنسيق الفوتر
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+// تصميم متجاوب للهواتف
+@media (max-width: 768px) {
+  body {
+    margin: 10px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  p, li {
+    font-size: 0.9rem;
+  }
+}
